@@ -304,6 +304,8 @@ export default function Home() {
             <code>Try /secret-terminal in the URL</code>
             <br />
             <code>Try /debug-maze in the URL</code>
+            <br />
+            <code>Try /coffee-catch in the URL</code>
           </div>
         </div>
       </div>
