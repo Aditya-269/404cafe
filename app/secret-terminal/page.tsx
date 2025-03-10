@@ -31,6 +31,7 @@ export default function SecretTerminal() {
     unlock: "Unlock secret content (requires password)",
     coffee: "Make a virtual coffee",
     exit: "Return to the café",
+    
   }
 
   // Secret commands not shown in help
@@ -41,6 +42,7 @@ export default function SecretTerminal() {
     matrix: "Wake up, Neo...",
     konami: "Up, Up, Down, Down, Left, Right, Left, Right, B, A",
     coffeebeans: "That's the image fix code!",
+    
   }
 
   // Focus input on mount
@@ -67,7 +69,9 @@ export default function SecretTerminal() {
     // Process command
     if (trimmedCmd === "") {
       return
-    } else if (trimmedCmd === "help") {
+    } 
+   
+    else if (trimmedCmd === "help") {
       setHistory((prev) => [
         ...prev,
         "Available commands:",

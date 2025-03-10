@@ -2,7 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes glitch {
+  0% { transform: translate(0) }
+  20% { transform: translate(-2px, 2px) }
+  40% { transform: translate(-2px, -2px) }
+  60% { transform: translate(2px, 2px) }
+  80% { transform: translate(2px, -2px) }
+  100% { transform: translate(0) }
+}
 
+.glitch-text {
+  animation: glitch 0.3s infinite;
+  display: inline-block;
+}
+
+@keyframes sparkle {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0); opacity: 0; }
+}
+
+.sparkle-trigger:hover::after {
+  content: '✨';
+  position: absolute;
+  animation: sparkle 0.8s ease-in-out;
+}
 
 @layer base {
   :root {

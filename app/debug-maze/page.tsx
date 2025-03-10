@@ -275,7 +275,7 @@ export default function DebugMaze() {
                           className={`aspect-square ${getCellColor(cell)} rounded-sm flex items-center justify-center`}
                         >
                           {playerPosition.row === rowIndex && playerPosition.col === colIndex && (
-                            <div className="w-3/4 h-3/4 bg-yellow-500 rounded-full animate-pulse"></div>
+                            <div className="w-3/4 h-3/4 bg-yellow-500 rounded-full animate-pulse shadow-lg"></div>
                           )}
                           {cell === "bug" && <Bug className="h-4 w-4 text-white" />}
                           {cell === "start" && rowIndex === 1 && colIndex === 1 && (

@@ -345,7 +345,7 @@ export default function CoffeeCatch() {
           {objects.map((obj) => (
             <div
               key={obj.id}
-              className="absolute transform -translate-x-1/2 -translate-y-1/2"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 transition-all duration-200 ease-in-out animate-bounce"
               style={{
                 left: `${obj.x}%`,
                 top: `${obj.y}%`,
@@ -360,9 +360,9 @@ export default function CoffeeCatch() {
           ))}
 
           {/* Player */}
-          <div className="absolute bottom-0 transform -translate-x-1/2" style={{ left: `${playerPosition}%` }}>
+          <div className="absolute bottom-0 transform -translate-x-1/2 transition-transform duration-100 ease-out" style={{ left: `${playerPosition}%` }}>
             <div className="relative">
-              <div className="w-16 h-12 bg-white rounded-t-3xl border-2 border-b-0 border-[#d4c3a3]"></div>
+              <div className="w-16 h-12 bg-white rounded-t-3xl border-2 border-b-0 border-[#d4c3a3] shadow-lg"></div>
               <div className="absolute -right-2 top-2 w-6 h-8 border-2 rounded-full border-[#d4c3a3]"></div>
             </div>
           </div>

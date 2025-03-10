@@ -302,6 +302,8 @@ export default function Home() {
         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity duration-500">
           <div className="bg-black text-white text-xs p-2 rounded-md whitespace-nowrap">
             <code>Try /secret-terminal in the URL</code>
+            <br />
+            <code>Try /debug-maze in the URL</code>
           </div>
         </div>
       </div>
