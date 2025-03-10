@@ -324,19 +324,24 @@ export default function Home() {
         </div>
       )}
 
-      <footer className="w-full max-w-5xl mt-auto pt-8 border-t border-[#d4c3a3] text-center">
-        <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} 404 Café | All rights reserved |
-          <Link href="/404-game" className="ml-1 text-[#8B4513] hover:underline">
-            Report a Bug
-          </Link>
-        </p>
-        <div className="mt-2 flex justify-center gap-2">
-          <KeyRound className="h-4 w-4 text-[#d4c3a3] cursor-pointer hover:text-[#8B4513] transition-colors" />
-          <Code className="h-4 w-4 text-[#d4c3a3] cursor-pointer hover:text-[#8B4513] transition-colors" />
-          <Sparkles className="h-4 w-4 text-[#d4c3a3] cursor-pointer hover:text-[#8B4513] transition-colors" />
-        </div>
-      </footer>
+<footer className="w-full max-w-5xl mt-auto pt-8 border-t border-[#d4c3a3] text-center">
+  <p className="text-sm text-muted-foreground">
+    © {new Date().getFullYear()} 404 Café | All rights reserved |
+    <Link href="/404-game" className="ml-1 text-[#8B4513] hover:underline">
+      Report a Bug
+    </Link>
+  </p>
+  <p className="text-sm text-muted-foreground mt-1">
+    Created with ❤️ by{""}
+    <span className="text-[#8B4513] font-medium">Aditya</span>
+  </p>
+  <div className="mt-3 flex justify-center gap-3">
+    <KeyRound className="h-5 w-5 text-[#d4c3a3] cursor-pointer hover:text-[#8B4513] transition-colors" />
+    <Code className="h-5 w-5 text-[#d4c3a3] cursor-pointer hover:text-[#8B4513] transition-colors" />
+    <Sparkles className="h-5 w-5 text-[#d4c3a3] cursor-pointer hover:text-[#8B4513] transition-colors" />
+  </div>
+</footer>
+
     </main>
   )
 }

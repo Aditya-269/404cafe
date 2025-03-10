@@ -169,28 +169,27 @@ export default function SecretTerminal() {
           </Button>
         </div>
 
-        <Card className="bg-black border-green-500 p-4 h-[70vh] flex flex-col">
-          <div ref={terminalRef} className="flex-1 overflow-y-auto mb-4 whitespace-pre-wrap">
-            {history.map((line, index) => (
-              <div key={index} className="mb-1">
-                {line}
-              </div>
-            ))}
-          </div>
+        <Card className="bg-black border border-green-500 p-4 h-[70vh] flex flex-col text-green-500">
+  <div ref={terminalRef} className="flex-1 overflow-y-auto mb-4 whitespace-pre-wrap text-green-400">
+    {history.map((line, index) => (
+      <div key={index} className="mb-1">{line}</div>
+    ))}
+  </div>
 
-          <form onSubmit={handleSubmit} className="flex items-center">
-            <span className="mr-2">$</span>
-            <input
-              ref={inputRef}
-              type="text"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              className="flex-1 bg-transparent border-none outline-none text-green-500"
-              autoComplete="off"
-              spellCheck="false"
-            />
-          </form>
-        </Card>
+  <form onSubmit={handleSubmit} className="flex items-center">
+    <span className="mr-2 text-green-500">$</span>
+    <input
+      ref={inputRef}
+      type="text"
+      value={input}
+      onChange={(e) => setInput(e.target.value)}
+      className="flex-1 bg-transparent border-none outline-none text-green-400 placeholder-green-600"
+      autoComplete="off"
+      spellCheck="false"
+    />
+  </form>
+</Card>
+
 
         {accessGranted && (
           <div className="mt-6 p-4 border border-green-500 rounded-md text-center">
